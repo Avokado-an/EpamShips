@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1742ec9-4f60-41e8-a68d-58d61bd117c7" name="Default Changelist" comment="" />
+    <list default="true" id="d1742ec9-4f60-41e8-a68d-58d61bd117c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d127afa92e4a5ecad9f51ba23ec766f55b518c8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30b2580808458c07433e7a446d4b8ae55623a477" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68090298f96f13c5e0a190f2d2a50cb599c47f37" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8819604cd0c7e1e227ba3af012030a5bab1dc15f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e25c3868a1115d69c91e50c7729a477e03f59c32" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/state/ShipState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/state/impl/ArrivingShipState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/state/impl/LeavingShipState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/state/impl/LoadingShipState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/state/impl/UnloadingShipState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/Pier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/Pier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/Port.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/thread_app/entity/Ship.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +30,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -22,6 +46,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1hXaaO5EopYPjS83EfWPyxrq5jU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,9 +54,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MST/Laba1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EPAM_WEB_PROJECT" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -50,7 +76,9 @@
       <updated>1600159953091</updated>
       <workItem from="1600159956812" duration="655000" />
       <workItem from="1600335453307" duration="613000" />
-      <workItem from="1600760424118" duration="5943000" />
+      <workItem from="1600760424118" duration="6787000" />
+      <workItem from="1600845453190" duration="8274000" />
+      <workItem from="1600930881392" duration="4863000" />
     </task>
     <servers />
   </component>
@@ -58,18 +86,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1600767075804">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1600936714799">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600767075804" />
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600936714799" />
     <state x="400" y="102" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1600764623625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="400" y="102" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1600764623625" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1600766896504">
+    <state x="432" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600854204889">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600766896504" />
+    <state x="432" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1600854204889" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1600937374180">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600937374180" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1600930884211">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600930884211" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600764294081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

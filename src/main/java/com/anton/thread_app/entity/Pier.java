@@ -1,25 +1,27 @@
 package com.anton.thread_app.entity;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class Pier {
-    private static final int DEFAULT_CAPACITY = 12;
-    List<Port> ports = new ArrayList<>(DEFAULT_CAPACITY);
+    private int id;
 
-    public Pier(List<Port> ports) {
-        this.ports = ports;
+    public Pier(int id) {
+        this.id = id;
     }
 
-    public Pier() {
+    public int getId() {
+        return id;
     }
 
-    public List<Port> getPorts() {
-        return Collections.unmodifiableList(ports);
+    public void load(Ship ship) {
+        Storage storage = Storage.getInstance();
+        storage.loadContainers(ship.getCurrentLoad());
     }
 
-    public void setPorts(List<Port> ports) {
-        this.ports = ports;
+    public void unload(Ship ship) {
+        Storage storage = Storage.getInstance();
+        storage.unloadContainers(ship.getCurrentLoad());
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
