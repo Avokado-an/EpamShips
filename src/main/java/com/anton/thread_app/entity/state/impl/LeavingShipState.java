@@ -29,7 +29,12 @@ public class LeavingShipState implements ShipState {
     public void leave(Ship ship) {
         Port port = Port.getInstance();
         Pier pier = ship.getCurrentPier();
-        port.leavePier(pier.getId());
-        LOGGER.info("Ship left the port");
+        port.leavePier(pier);
+        LOGGER.info(String.format("Ship %d left the port", ship.getId()));
+    }
+
+    @Override
+    public String toString() {
+        return "LeavingShipState";
     }
 }

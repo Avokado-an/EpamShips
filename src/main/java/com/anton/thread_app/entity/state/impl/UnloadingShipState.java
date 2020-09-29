@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 public class UnloadingShipState implements ShipState {
     private static final Logger LOGGER = LogManager.getLogger();
-    private static final ShipState nextState = new LeavingShipState();
+    private static final ShipState nextState = new LoadingShipState();
 
     @Override
     public void arrive(Ship ship) {
@@ -23,13 +23,17 @@ public class UnloadingShipState implements ShipState {
     @Override
     public void unload(Ship ship) {
         Pier pier = ship.getCurrentPier();
-        pier.unload(ship);
+        pier.unloadShipToStorage(ship);
         ship.setShipState(nextState);
-        LOGGER.info(String.format("Ship %d was unloaded", ship.getId()));
     }
 
     @Override
     public void leave(Ship ship) {
         LOGGER.warn("Unsupported operation");
+    }
+
+    @Override
+    public String toString() {
+        return "UnloadingShipState";
     }
 }

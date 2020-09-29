@@ -1,37 +1,64 @@
 package com.anton.thread_app.entity;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Storage {
-    private static final Logger LOGGER = LogManager.getLogger();
     private static final int STORAGE_CAPACITY = 150;
-    private static final Storage instance = new Storage(STORAGE_CAPACITY);
-    private int currentLoad;
+    private static final int STARTING_LOAD = STORAGE_CAPACITY / 10;
+    private static final Storage instance = new Storage();
+    private AtomicInteger currentLoad;
 
-    private Storage(int currentLoad) {
-        this.currentLoad = currentLoad;
+    private Storage() {
+        currentLoad = new AtomicInteger(STARTING_LOAD);
     }
 
     public static Storage getInstance() {
         return instance;
     }
 
-    boolean loadContainers(int amountOfContainers) {
+    boolean loadContainers(Ship ship) {
         boolean flag = false;
-        if(currentLoad + amountOfContainers <= STORAGE_CAPACITY) {
-            currentLoad += amountOfContainers;
+        if (currentLoad.intValue() + ship.getCurrentLoad() <= STORAGE_CAPACITY) {
+            currentLoad.set(currentLoad.intValue() + ship.getCurrentLoad());
             flag = true;
         }
         return flag;
     }
 
-    boolean unloadContainers(int amountOfContainers) {
+    boolean unloadContainers(Ship ship) {
         boolean flag = false;
-        if(currentLoad - amountOfContainers >= 0) {
-            currentLoad -= amountOfContainers;
+        int amountOfContainersToUnload = ship.getTotalCapacity() - ship.getCurrentLoad();
+        if (currentLoad.intValue() - amountOfContainersToUnload >= 0) {
+            currentLoad.set(currentLoad.intValue() - amountOfContainersToUnload);
             flag = true;
         }
         return flag;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder res = new StringBuilder();
+        res.append("Storage with max load of ").
+                append(STORAGE_CAPACITY).append(" and current load of ").append(currentLoad);
+        return res.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Storage storage = (Storage) o;
+        return currentLoad.get() == storage.currentLoad.get();
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 31;
+        hash += currentLoad.hashCode();
+        return hash;
     }
 }

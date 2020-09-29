@@ -7,8 +7,6 @@ c
 3src/main/java/com/anton/thread_app/entity/Ship.java,2\d\2d127afa92e4a5ecad9f51ba23ec766f55b518c8
 c
 3src/main/java/com/anton/thread_app/entity/Port.java,3\0\30b2580808458c07433e7a446d4b8ae55623a477
-a
-1src/main/java/com/anton/thread_app/main/Mail.java,6\8\68090298f96f13c5e0a190f2d2a50cb599c47f37
 c
 3src/main/java/com/anton/thread_app/entity/Pier.java,e\2\e25c3868a1115d69c91e50c7729a477e03f59c32
 f
@@ -23,3 +21,15 @@ z
 Jsrc/main/java/com/anton/thread_app/entity/state/impl/LoadingShipState.java,0\8\0802db6a5b87ebbe91b27c221955718c7253d0ff
 {
 Ksrc/main/java/com/anton/thread_app/entity/state/impl/ArrivingShipState.java,4\d\4d0dd48f8f6e40a30915bdfb1c6d5dee7356a57d
+k
+;src/main/java/com/anton/thread_app/creator/ShipCreator.java,a\8\a81c96f1b7af46a0c943179ce431d138cec20799
+o
+?src/main/java/com/anton/thread_app/reader/StreamFileReader.java,7\2\722b76e47943ae997afdd53b63aea61c6a749b15
+i
+9src/main/java/com/anton/thread_app/parser/ShipParser.java,8\5\85b7d570c608248ac51bb7ca5fad2164a9e632ec
+a
+1src/main/java/com/anton/thread_app/main/Main.java,7\3\73258a1401a2b5bf9e81965fe8bdaf196902f6af
+A
+data/shipData.txt,6\b\6b2b53a3c81b69e79f6bd95b4ce73c6a72bd1a36
+<
+logs/app.log,1\9\19551365d5d85d08cf06f31af46de9860d5f5240
