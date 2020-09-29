@@ -26,7 +26,7 @@ public class Main {
             List<String> shipsData = reader.readFile(FILE_NAME);
             List<Ship> ships = creator.createShips(shipsData);
             LOGGER.info("Starting storage: " + Storage.getInstance().toString());
-            ExecutorService executor = Executors.newFixedThreadPool(ships.size()); // TODO: 28.09.2020 is this ok? 
+            ExecutorService executor = Executors.newFixedThreadPool(ships.size());
             List<Future<String>> futureShipsOperationInfo = new ArrayList<>();
             ships.forEach(s -> futureShipsOperationInfo.add(executor.submit(s)));
             futureShipsOperationInfo.forEach(info -> {

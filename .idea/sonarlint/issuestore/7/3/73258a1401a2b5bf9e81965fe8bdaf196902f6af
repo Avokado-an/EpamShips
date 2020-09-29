@@ -1,13 +1,13 @@
 
-c
-java:S3457"AFormat specifiers should be used instead of string concatenation.(¶š÷úÿÿÿÿ8ÓÈêÒÌ.
 ]
 java:S3457'"AFormat specifiers should be used instead of string concatenation.(ÔÛÌP8†ÕôÑÌ.
-x
-java:S2629'"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÔÛÌP8†ÕôÑÌ.
-c
-java:S2142#"FEither re-interrupt this method or rethrow the "InterruptedException".(üŸ´Â8¦è™ÑÌ.
-~
-java:S2629"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(¶š÷úÿÿÿÿ8ÓÈêÒÌ.
 O
 java:S1135"2Complete the task associated to this TODO comment.(á§´ã8‹“Í.
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(¶š÷úÿÿÿÿ8ÓÈêÒÌ.
+x
+java:S2629'"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÔÛÌP8†ÕôÑÌ.
+~
+java:S2629"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(¶š÷úÿÿÿÿ8ÓÈêÒÌ.
+c
+java:S2142#"FEither re-interrupt this method or rethrow the "InterruptedException".(üŸ´Â8¦è™ÑÌ.
